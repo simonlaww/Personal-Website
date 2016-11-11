@@ -39,6 +39,18 @@ hr {
 	word-wrap: break-word;
 }
 
+.edu {
+	background: lightblue;
+	display: inline-block;
+	overflow:hidden;
+	height: 270px;
+	margin-bottom: 20px;
+	width: 100%;
+	border-radius: 15px;
+	box-shadow: 10px 10px 5px #888888;
+	word-wrap: break-word;
+}
+
 nav.page-navigation {
 	background-color: #333;
 	width: 100%;
@@ -62,6 +74,10 @@ li a:hover {
     background-color: #333;
 }
 
+li.a {
+
+}
+
 li {
     float: left;
 }
@@ -75,7 +91,7 @@ li a {
 }
 
 .title {
-	background-image: url("https://4.bp.blogspot.com/-KXSsLVKT7pY/UoszPzBUhkI/AAAAAAAAV6w/LnSQh4nr9F4/s0/Sunset-at-Rio-de-Janeiro_ultra_HD.jpg");
+	background-image: url("http://cdn.wallpapersafari.com/8/16/5nFzER.jpg");
 	background-size: 100%;
 	width: 100%;
 	height: 760px;
@@ -86,9 +102,10 @@ li a {
 .intro {
 	margin-top: 0;
 	/*background-image: url("http://cdn.bigbangfish.com/beautiful/beautiful-sunset/beautiful-sunset-7.jpg");*/
-	background-color: #0099ff;
+	/*background-color: #0099ff;*/
+	background-color: #ff8080;
 	width: 100%;
-	height: 760px;
+	height: 950px;
 }
 
 .experience {
@@ -100,13 +117,19 @@ li a {
 .education {
 	background-color: #00ff00;
 	width: 100%;
-	height: 760px;
+	height: 460px;
 }
 
 .hobbies {
-	background-color: #ff8080;
+	background-color: #4dffff;
 	width: 100%;
 	height: 760px;
+}
+
+.contact {
+	background-color: #ffff80;
+	width: 100%;
+	height: 480px;
 }
 
 .tangerine {
@@ -123,7 +146,7 @@ li a {
 
 .shadowsIntoLight {
 	font-family: 'Shadows Into Light', cursive;
-	font-size: 16px;
+	font-size: 24px;
 }
 
 .gloriaHallelujah {
