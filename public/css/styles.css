@@ -1,0 +1,90 @@
+p {
+	background-color: lightblue;
+}
+
+hr {
+	width: 50%;
+}
+
+.header {
+	background-image: url("http://www.softservenews.com/photos/large/1378277_616674111718421_1661563543_n.jpg");
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+}
+
+.navBar {
+	background-color: #00ff00;
+}
+
+ul {
+	width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.title {
+	height: 720px;
+	line-height: 720px;
+    text-align: center;
+}
+
+.intro {
+	/*background-image: url("http://cdn.bigbangfish.com/beautiful/beautiful-sunset/beautiful-sunset-7.jpg");*/
+	background-color: #0099ff;
+	width: 100%;
+	height: 720px;
+}
+
+.education {
+	background-color: #00ff00;
+	width: 100%;
+	height: 720px;
+}
+
+.hobbies {
+	background-color: #ff8080;
+	width: 100%;
+	height: 720px;
+}
+
+.tangerine {
+	font-family: 'Tangerine', serif;
+    font-size: 128px;
+  	text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+  	height: 200px;
+}
+
+.lobster {
+	font-family: 'Lobster', cursive;
+	font-size: 64px;
+}
+
+.shadowsIntoLight {
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 16px;
+}
+
+.gloriaHallelujah {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 56px;
+}
