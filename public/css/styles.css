@@ -1,5 +1,6 @@
-p {
-	background-color: lightblue;
+body {
+	margin: 0;
+	padding: 0;
 }
 
 hr {
@@ -7,14 +8,16 @@ hr {
 }
 
 .header {
-	background-image: url("http://www.softservenews.com/photos/large/1378277_616674111718421_1661563543_n.jpg");
+	background-image: url("http://eskipaper.com/images/stunning-anime-scenery-wallpaper-1.jpg");
 	background-size: contain;
 	width: 100%;
 	height: 100%;
 }
 
-.navBar {
-	background-color: #00ff00;
+nav.page-navigation {
+	background-color: #333;
+	width: 100%;
+	position: fixed;
 }
 
 ul {
@@ -24,6 +27,10 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    position: fixed;
+    background-color: transparent;
+    /*background: transparent;*/
+    border-color: transparent;
 }
 
 li a:hover {
@@ -43,28 +50,32 @@ li a {
 }
 
 .title {
-	height: 720px;
-	line-height: 720px;
+	/*background-image: url("http://eskipaper.com/images/stunning-anime-scenery-wallpaper-1.jpg");
+	background-size: cover;
+	width: 100%;*/
+	height: 760px;
+	line-height: 760px;
     text-align: center;
 }
 
 .intro {
+	margin-top: 0;
 	/*background-image: url("http://cdn.bigbangfish.com/beautiful/beautiful-sunset/beautiful-sunset-7.jpg");*/
 	background-color: #0099ff;
 	width: 100%;
-	height: 720px;
+	height: 760px;
 }
 
 .education {
 	background-color: #00ff00;
 	width: 100%;
-	height: 720px;
+	height: 760px;
 }
 
 .hobbies {
 	background-color: #ff8080;
 	width: 100%;
-	height: 720px;
+	height: 760px;
 }
 
 .tangerine {

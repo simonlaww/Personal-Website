@@ -13,20 +13,22 @@
     Gloria+Hallelujah">
 </head>
 <body ng-app="homePage" class="header">
-  <div>
-    <ul>
-      <li><a class="active" href="#home">Title</a></li>
-      <li><a href="#news">About Me</a></li>
-      <li><a href="#contact">Education</a></li>
-      <li><a href="#about">Hobbies</a></li>
-    </ul>
+  <div id="navBar">
+    <nav class="site-navigation page-navigation">
+      <ul>
+        <li><a href="#title">Title</a></li>
+        <li><a href="#intro">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+      </ul>
+    </nav>
   </div>
 
-	<div class="title">
+	<div class="title" id="title">
 		<font class="tangerine">Simon Law</font></br>
   </div>
 
-  <div class="intro">
+  <div class="intro" id="intro">
     <div class="container">
       <font class="gloriaHallelujah"><center>About Me<hr></center></font>
       <font class="shadowsIntoLight"><center>Hello! My name is Simon Law.ffewafweafewweafewafweafweafweafweafwea
@@ -36,14 +38,14 @@
     </div>
   </div>
 
-  <div class="education">
+  <div class="education" id="education">
     <div class="container">
       <font class="gloriaHallelujah"><center>Education<hr></center></font>
       <font class="shadowsIntoLight"><center>fewafwe</center></font>
     </div>
   </div>
 
-  <div class="hobbies">
+  <div class="hobbies" id="hobbies">
     <div class="container">
       <font class="gloriaHallelujah"><center>Hobbies<hr></center></font>
       <font class="shadowsIntoLight"><center>fewafwe</center></font>
@@ -72,5 +74,12 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script type="text/javascript" src="/js/controller.js"></script>
+  <script type="text/javascript" src="../js/jquery.combinedScroll.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {  
+      // Hook up the current state to the nav bar
+      $('.page-navigation').onePageNav();
+    });
+  </script>
 </body>
 </html>
