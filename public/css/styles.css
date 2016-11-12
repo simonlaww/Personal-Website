@@ -10,12 +10,15 @@ hr {
 
 .header {
 	background-image: url("https://4.bp.blogspot.com/-KXSsLVKT7pY/UoszPzBUhkI/AAAAAAAAV6w/LnSQh4nr9F4/s0/Sunset-at-Rio-de-Janeiro_ultra_HD.jpg");
-	background-size: auto 100%;
+	background-size: cover;
+	background-attachment: fixed;
 	width: 100%;
 	height: 760px;
 	z-index: -1;
 	position: relative;
 	background-repeat: no-repeat;
+
+	@media (max-width: @iphone-screen) { background-attachment: scroll; }
 }
 
 .fullCol {
