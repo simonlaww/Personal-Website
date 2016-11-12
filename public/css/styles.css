@@ -39,6 +39,18 @@ hr {
 	word-wrap: break-word;
 }
 
+.thirdCol {
+	background: silver;
+	display: inline-block;
+	overflow: hidden;
+	height: 525px;
+	width: 100%;
+	border-radius: 15px;
+	box-shadow: 10px 10px 5px #888888;
+	margin-right: 15px;
+	word-wrap: break-word;
+}
+
 .edu {
 	background: lightblue;
 	display: inline-block;
@@ -119,7 +131,7 @@ li a {
 .hobbies {
 	background-color: #4dffff;
 	width: 100%;
-	height: 760px;
+	height: 960px;
 }
 
 .contact {
@@ -164,4 +176,9 @@ li a {
 .dancingScript {
 	font-family: 'Dancing Script', cursive;
 	font-size: 40px;
+}
+
+.unkempt {
+	font-family: 'Unkempt', cursive;
+	font-size: 20px;
 }
