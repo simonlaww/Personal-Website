@@ -15,8 +15,7 @@ hr {
 	height: 760px;
 	z-index: -1;
 	position: relative;
-	min-width: 100%;
-	min-height: 100%;
+	background-repeat: no-repeat;
 }
 
 .fullCol {
