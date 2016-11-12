@@ -15,11 +15,8 @@ hr {
 	height: 760px;
 	z-index: -1;
 	position: relative;
-	background-position: center center;
-
-    @media (max-width: @iphone-screen) {
-        background-attachment: scroll;
-    }
+	min-width: 100%;
+	min-height: 100%;
 }
 
 .fullCol {
