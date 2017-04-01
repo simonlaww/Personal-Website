@@ -16,67 +16,111 @@
 
 <body ng-app="homePage">
   <div id="navBar">
-    <nav class="site-navigation page-navigation">
-      <ul class="menu">
-        <li><a href="#title">Title</a></li>
-        <li><a href="#intro">About Me</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#hobbies">Hobbies</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <!-- <a class="navbar-brand" href="#page-top">To the top</a> -->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#title">Title</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#intro">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#education">Education</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#hobbies">Hobbies</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
     </nav>
   </div>
 
 	<div class="title" id="title">
-		<font class="tangerine" color="white">Simon Law</font></br>
+    <div class="slide-left" id="title-animation">
+      <p><font class="gloriaHallelujah" style="font-size:72px" color="white">Simon Law</font></br></p>
+    </div>
   </div>
 
   <div class="intro" id="intro">
     <div class="container">
-      <font class="gloriaHallelujah" color="white"><center>About Me<hr></center></font>
-      <font class="shadowsIntoLight" color="white"><center>Hello! My name is Simon Law and I am currently a sophomore here at the University of California, San Diego studying Mathematics-Computer Science. I love learning about new technologies and just playing around. It's exciting taking on new challenges, pushing yourself to grow and step out of your comfort zone. Outside of coding, I love to dance and am well versed in different styles. Dancing is something that I love to do outside in my free time and I always push myself to grow as a dancer and as a coder. I also really enjoy watching anime and reading manga in my spare time as well.</center></font>
-      <center><img src="https://scontent-sjc2-1.xx.fbcdn.net/t31.0-8/14352601_1418586928168677_3365378077764017492_o.jpg" width="75%"></center>
+      <div class="row">
+          <div class="col-lg-12 text-center">
+              <font class="gloriaHallelujah" color=#2C3E50>About Me</font>
+              <hr class="star-light">
+          </div>
+      </div>
+      <font class="shadowsIntoLight" color="black"><center>Hello! My name is Simon Law and I am currently a sophomore here at the University of California, San Diego studying Mathematics-Computer Science. I love learning about new technologies and just playing around. It's exciting taking on new challenges, pushing yourself to grow and step out of your comfort zone. Outside of coding, I love to dance and am well versed in different styles. Dancing is something that I love to do outside in my free time and I always push myself to grow as a dancer and as a coder. I also really enjoy watching anime and reading manga in my spare time as well.</center></font>
+      <center><img src="https://scontent.xx.fbcdn.net/v/t31.0-8/14352601_1418586928168677_3365378077764017492_o.jpg?oh=db967dee4aed9be0117a7befae5c42d3&oe=5967ED5B" width="75%"></center>
     </div>
   </div>
 
   <div class="experience" id="experience">
     <div class="container">
       <center>
-        <font class="gloriaHallelujah"><center>Experience<hr></center></font>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+              <font class="gloriaHallelujah" color=#2C3E50>Experience</font>
+              <hr class="star-primary">
+          </div>
+      </div>
         <div class="fullCol">
-          <font class="dancingScript"><center>Everyone Counts</center></font>
-          <font class="comingSoon"><center>June 2016-Sept 2016</center></font>
+          <font class="gloriaHallelujah" style="font-size:28px"><center>Everyone Counts</center></font>
+          <font class="gloriaHallelujah" style="font-size:18px"><center>June 2016-Sept 2016</center></font>
           <div class="container">
             <div class="col-xs-3">
-              <img src="https://pbs.twimg.com/profile_images/681970458506342400/_-19rcqc.png" width="100%">
+              <img src="https://pbs.twimg.com/profile_images/681970458506342400/_-19rcqc.png" width="80%">
             </div>
             <div class="col-xs-8">
-              <font class="indieFlower">This past summer, I furthered my Computer Science endeavors by interning at a company called Everyone Counts, which manages voting services for customers. Currently, Everyone Counts is contracted by the state of New Jersey to rebuild their Statewide Voter Registration Site. At Everyone Counts, I developed a brand new Behavior Driven Development Framework using Cucumber and Protractor to test the front end functionality of the website. I eventually handed this project off to the actual QA team who officially uses the Framework that I built for their automated regression tests. I also assisted in the development of their website on both the front end and back end side. I remodeled webpages with a modernized UI using Angular and NodeJS, ensuring that data was able to be grabbed from the API’s efficiently and optimally.</font>
+              <font class="comingSoon" style="font-size:16px">
+              This past summer, I furthered my Computer Science endeavors by interning at a company called Everyone Counts, which manages voting services for customers. Currently, Everyone Counts is contracted by the state of New Jersey to rebuild their Statewide Voter Registration Site. At Everyone Counts, I developed a brand new Behavior Driven Development Framework using Cucumber and Protractor to test the front end functionality of the website. I eventually handed this project off to the actual QA team who officially uses the Framework that I built for their automated regression tests. I also assisted in the development of their website on both the front end and back end side. I remodeled webpages with a modernized UI using Angular and NodeJS, ensuring that data was able to be grabbed from the API’s efficiently and optimally.
+              </font>
             </div>
           </div>
         </div>
         <div class="halfCol">
-          <font class="dancingScript"><center>ThoughtStem</center></font>
-          <font class="comingSoon"><center>June 2014-Sept 2014</center></font>
+          <font class="gloriaHallelujah" style="font-size:28px"><center>ThoughtStem</center></font>
+          <font class="gloriaHallelujah" style="font-size:18px"><center>June 2014-Sept 2014</center></font>
           <div class="container">
             <div class="col-xs-1">
               <img src="https://s3-media3.fl.yelpcdn.com/bphoto/Gubuj_fuLcSy-9odUittOg/ls.jpg" width="180%">
             </div>
             <div class="col-xs-5">
-            <font class="indieFlower">During High School, I interned at a company called ThoughtSTEM, founded by alumni of the University of California, San Diego. There I taught fundamental programming concepts to children using the program Scratch</font>
+            <font class="comingSoon" style="font-size:16px">During High School, I interned at a company called ThoughtSTEM, founded by alumni of the University of California, San Diego. There I taught fundamental programming concepts to children using the program Scratch</font>
             </div>
           </div>
         </div>
         <div class="halfCol2">
-          <font class="dancingScript"><center>Gateways Summer School</center></font>
-          <font class="comingSoon"><center>June 2014-Aug 2014</center></font>
+          <font class="gloriaHallelujah" style="font-size:28px"><center>Gateways Summer School</center></font>
+          <font class="gloriaHallelujah" style="font-size:18px"><center>June 2014-Aug 2014</center></font>
           <div class="container">
             <div class="col-xs-1">
-              <img src="http://camp.talentshub.net/wp-content/uploads/sites/8/2016/03/gwlogo-220x162.jpg" width="140%">
+              <img src="http://camp.talentshub.net/wp-content/uploads/sites/8/2016/03/gwlogo-220x162.jpg" width="140%" height="100%">
             </div>
             <div class="col-xs-4">
-            <font class="indieFlower"><center>That same summer, I also worked at a company called Gateways. It was a summer school geared towards the arts. There I helped prepare course material, planned the class schedule and
+            <font class="comingSoon" style="font-size:16px"><center>That same summer, I also worked at a company called Gateways. It was a summer school geared towards the arts. There I helped prepare course material, planned the class schedule and
             lectured to the class.</center></font>
             </div>
           </div>
@@ -87,20 +131,26 @@
 
   <div class="education" id="education">
     <div class="container">
-      <font class="gloriaHallelujah"><center>Education<hr></center></font>
+      <div class="row">
+          <div class="col-lg-12 text-center">
+              <font class="gloriaHallelujah" color=#2C3E50>Education</font>
+              <hr class="star-light">
+          </div>
+      </div>
       <div class="edu">
-        <font class="dancingScript"><center>University of California, San Diego</center></font>
+        <!-- <font class="gloriaHallelujah"><center>University of California, San Diego</center></font> -->
         <div class="container">
-            <div class="col-xs-3">
+<!--             <div class="col-xs-3">
               <img src="http://emeriti.ucsd.edu/_images/UCSDlogo" width="80%">
-            </div>
-            <div class="col-xs-9">
-            <font class="indieFlower">
-              <li>Bachelors of Science, Mathematics Computer Science</li><br>
-              <li>Graduation Date: June 2019</li><br>
-              <li>Sophomore</li><br>
-              <li>Junior Academic Standing</li><br>
-              <li>Sixth College</font></li>
+            </div> -->
+            <div class="col-xs-12">
+            <font class="comingSoon">
+              <uli><center>University of California, San Diego</center></uli><br>
+              <uli><center>Bachelors of Science, Mathematics Computer Science</center></uli><br>
+              <uli><center>Graduation Date: June 2019</center></uli><br>
+              <uli><center>Sophomore</center></uli><br>
+              <uli><center>Senior Academic Standing</center></uli><br>
+              <uli><center>Sixth College</center></font></uli>
             </div>
           </div>
       </div>
@@ -109,31 +159,42 @@
 
   <div class="hobbies" id="hobbies">
     <div class="container">
-      <font class="gloriaHallelujah"><center>Hobbies<hr></center></font>
+      <div class="row">
+          <div class="col-lg-12 text-center">
+              <font class="gloriaHallelujah" color=#2C3E50>Hobbies</font>
+              <hr class="star-primary">
+          </div>
+      </div>
       <div class="col-xs-4">
         <center><font class="shadowsIntoLight">KASA Danceoff</font></br>
-          <img src="https://scontent-lax3-1.xx.fbcdn.net/t31.0-8/12244270_1063070213713572_887703249198101562_o.jpg" width="100%">
+          <img src="https://scontent.xx.fbcdn.net/v/t31.0-8/12244270_1063070213713572_887703249198101562_o.jpg?oh=dc0152808a76f50423a1e3068f6f1626&oe=59620AD2" width="100%">
           <br><br>
           <div class="thirdCol">
-            <font class="unkempt">When I entered college, I wanted to explore, which also meant exploring different kinds of dances. The first dance that I wanted to try was hip hop choreography. Along the way, I found a team called KASA Danceoff. Founded by the Korean American Student Association, it was a team designed for Freshman during their first quarter of college to join a team and compete against other KASA organizations over Southern California. There I met so many of my closest friends today and got the joy of learning hip hop choreography.</font>
+            <p align="justify">
+              <font class="unkempt">When I entered college, I wanted to explore, which also meant exploring different kinds of dances. The first dance that I wanted to try was hip hop choreography. Along the way, I found a team called KASA Danceoff. Founded by the Korean American Student Association, it was a team designed for Freshman during their first quarter of college to join a team and compete against other KASA organizations over Southern California. There I met so many of my closest friends today and got the joy of learning hip hop choreography.</font>
+            </p>
           </div>
         </center>
       </div>
       <div class="col-xs-4">
         <center><font class="shadowsIntoLight">[N]Motion</font></br>
-          <img src="https://scontent-lax3-1.xx.fbcdn.net/t31.0-8/12771960_964205953632676_1950754826514426188_o.jpg" width="100%">
+          <img src="https://scontent.xx.fbcdn.net/v/t1.0-9/17191503_1424892104249352_9099063936513507946_n.jpg?oh=03f2340b9a9c8a9219042dd72f1a1a2a&oe=596270EB" width="100%">
           <br><br>
           <div class="thirdCol">
-            <font class="unkempt">[N]Motion was the main team that I joined during/after KASA Danceoff. They were a beginner friendly team on campus, and I was always drawn to the atmosphere. They were always fun to be around, while still caring for dance and pushing themselves to grow. There I met a lot of different people who heavily impacted my first year at UCSD. This eventually led me to apply to be leadership for the school year of 2016-2017 for [N]Motion. I wanted to give back to the organization that helped me grow so much and I wanted to foster the growth of the new generations to come after me.</font>
+            <p align="justify">
+              <font class="unkempt">[N]Motion was the main team that I joined during/after KASA Danceoff. They were a beginner friendly team on campus, and I was always drawn to the atmosphere. They were always fun to be around, while still caring for dance and pushing themselves to grow. There I met a lot of different people who heavily impacted my first year at UCSD. I eventually applied for a leadership role to give back to the organization that helped me grow so much and I wanted to foster the growth of the new generations to come after me.</font>
+            </p>
           </div>
         </center>
       </div>
       <div class="col-xs-4">
         <center><font class="shadowsIntoLight">Bodyrock</font></br>
-          <img src="https://scontent-lax3-1.xx.fbcdn.net/t31.0-8/11062127_10204258429460269_7011430537988852199_o.jpg" width="100%">
+          <img src="https://scontent.xx.fbcdn.net/v/t31.0-8/11062127_10204258429460269_7011430537988852199_o.jpg?oh=02a9f2b719722d89a5c05b82b364d0c4&oe=595334A9" width="100%">
           <br><br>
           <div class="thirdCol">
-            <font class="unkempt">I started breakdancing when I was 13 after being inspired by my cousin, another breakdancer. I thought to myself how cool it looked and how insane it would be if I could breakdance as well. So I pushed myself and I trained hard. I practiced to the point where I would have 6 bruises simultaneously, but that never stopped me. I perservered and trained further. The feeling of excitement after successfully executing a move pushed me. So when I entered college, I immediately searched for UCSD's Breakdancing Club and found Bodyrock. Bodyrock is full of inspiring individuals who always support you and push you towards greater heights.</font>
+            <p align="justify">
+              <font class="unkempt">I started breakdancing when I was 13 after being inspired by my cousin, another breakdancer. I thought to myself how cool it looked and how insane it would be if I could breakdance as well. So I pushed myself and I trained hard. I practiced to the point where I would have 6 bruises simultaneously, but that never stopped me. I perservered and trained further. The feeling of excitement after successfully executing a move pushed me. So when I entered college, I immediately searched for UCSD's Breakdancing Club and found Bodyrock.</font>
+            </p>
           </div>
         </center>
       </div>
@@ -141,7 +202,12 @@
   </div>
 
   <div class="contact" id="contact">
-    <font class="gloriaHallelujah"><center>Contact<hr></center></font>
+    <div class="row">
+          <div class="col-lg-12 text-center">
+              <font class="gloriaHallelujah" color=#2C3E50>Contact</font>
+              <hr class="star-light">
+          </div>
+      </div>
     <font class="shadowsIntoLight"><center>If you have any questions or comments, feel free to message me!
       <br>Email: silaw@ucsd.edu
       <br>Phone: (858) 242-7559
@@ -159,6 +225,8 @@
   <!-- Live reload script -->
   <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script type="text/javascript" src="/js/controller.js"></script>
   <script type="text/javascript" src="../js/jquery.combinedScroll.js"></script>

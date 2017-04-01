@@ -28,7 +28,7 @@ hr {
 	height: 350px;
 	width: 100%;
 	border-radius: 15px;
-	box-shadow: 10px 10px 5px #888888;
+	/*box-shadow: 10px 10px 5px #888888;*/
 	word-wrap: break-word;
 	z-index: -1;
 	position: relative;
@@ -41,7 +41,7 @@ hr {
 	height: 250px;
 	width: 48%;
 	border-radius: 15px;
-	box-shadow: 10px 10px 5px #888888;
+	/*box-shadow: 10px 10px 5px #888888;*/
 	margin-right: 20px;
 	word-wrap: break-word;
 	z-index: -1;
@@ -55,7 +55,7 @@ hr {
 	height: 250px;
 	width: 49%;
 	border-radius: 15px;
-	box-shadow: 10px 10px 5px #888888;
+	/*box-shadow: 10px 10px 5px #888888;*/
 	margin-right: 0px;
 	word-wrap: break-word;
 	z-index: -1;
@@ -63,13 +63,13 @@ hr {
 }
 
 .thirdCol {
-	background: silver;
+	/*background: silver;*/
 	display: inline-block;
 	overflow: hidden;
 	height: 525px;
 	width: 100%;
 	border-radius: 15px;
-	box-shadow: 10px 10px 5px #888888;
+	/*box-shadow: 10px 10px 5px #888888;*/
 	margin-right: 15px;
 	word-wrap: break-word;
 	z-index: -1;
@@ -77,53 +77,69 @@ hr {
 }
 
 .edu {
-	background: lightblue;
+	/*background: lightblue;*/
 	display: inline-block;
 	overflow:hidden;
 	height: 270px;
 	margin-bottom: 20px;
 	width: 100%;
 	border-radius: 15px;
-	box-shadow: 10px 10px 5px #888888;
+	/*box-shadow: 10px 10px 5px #888888;*/
 	word-wrap: break-word;
 	z-index: -1;
 	position: relative;
 }
 
-nav.page-navigation {
-	background-color: #333;
-	width: 100%;
-	position: fixed;
+.navbar-custom {
+  background: #2C3E50;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
 }
-
-ul {
-	z-index: 100;
-	width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    /*background-color: transparent;*/
-    /*background: transparent;*/
-    /*border-color: transparent;*/
+.navbar-custom .navbar-brand {
+  color: white;
 }
-
-li a:hover {
-    background-color: #333;
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:active,
+.navbar-custom .navbar-brand.active {
+  color: white;
 }
-
-li {
-    float: left;
+.navbar-custom .navbar-nav {
+  letter-spacing: 1px;
 }
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.navbar-custom .navbar-nav li a {
+  color: white;
+}
+.navbar-custom .navbar-nav li a:hover {
+  color: #18BC9C;
+}
+.navbar-custom .navbar-nav li a:focus,
+.navbar-custom .navbar-nav li a:active {
+  color: white;
+}
+.navbar-custom .navbar-nav li.active a {
+  color: white;
+  background: #18BC9C;
+}
+.navbar-custom .navbar-nav li.active a:hover,
+.navbar-custom .navbar-nav li.active a:focus,
+.navbar-custom .navbar-nav li.active a:active {
+  color: white;
+  background: #18BC9C;
+}
+.navbar-custom .navbar-toggle {
+  color: white;
+  text-transform: uppercase;
+  font-size: 10px;
+  border-color: white;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #18BC9C;
+  color: white;
+  border-color: #18BC9C;
 }
 
 .title {
@@ -140,70 +156,94 @@ li a {
     position: relative;
 }
 
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+  }
+  .navbar-custom .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .navbar-custom.affix {
+    padding: 10px 0;
+  }
+  .navbar-custom.affix .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+
 .intro {
-	margin-top: 0;
 	/*background-image: url("http://wallpapercave.com/wp/bGtUe1Y.jpg");*/
 	background-color: #ff8080;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
 	width: 100%;
-	height: 950px;
+	height: 1150px;
 	z-index: -1;
 	position: relative;
-	padding-top: 35px;
+	padding-top: 125px;
 }
 
 .experience {
 	/*background-image: url("http://wallpapercave.com/wp/6k4zvSp.jpg");*/
-	background-color: #dd99ff;
+	/*background-color: #dd99ff;*/
+	background-color: white;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
 	width: 100%;
-	height: 830px;
+	height: 925px;
 	z-index: -1;
 	position: relative;
-	padding-top: 35px;
+	padding-top: 125px;
 }
 
 .education {
 	/*background-image: url("http://wallpapercave.com/wp/BQ6IevO.jpg");*/
-	background-color: #00ff00;
+	/*background-color: #00ff00;*/
+	background-color: #ff8080;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
 	width: 100%;
-	height: 480px;
+	height: 670px;
 	z-index: -1;
 	position: relative;
-	padding-top: 35px;
+	padding-top: 125px;
 }
 
 .hobbies {
 	/*background-image: url("http://wallpapercave.com/wp/CLTI5X7.jpg");*/
-	background-color: #4dffff;
+	/*background-color: #4dffff;*/
+	background-color: white;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
 	width: 100%;
-	height: 1000px;
+	height: 1100px;
 	z-index: -1;
 	position: relative;
-	padding-top: 35px;
+	padding-top: 125px;
 }
 
 .contact {
 	/*background-image: url("http://wallpapercave.com/wp/NjGx9YN.jpg");*/
-	background-color: #ffff80;
+	/*background-color: #ffff80;*/
+	background-color: #ff8080;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
 	width: 100%;
-	height: 480px;
+	height: 580px;
 	z-index: -1;
 	position: absolute;
-	padding-top: 35px;
+	padding-top: 125px;
 }
 
 .tangerine {
@@ -225,7 +265,7 @@ li a {
 
 .gloriaHallelujah {
 	font-family: 'Gloria Hallelujah', cursive;
-	font-size: 56px;
+	font-size: 42px;
 }
 
 .indieFlower {
@@ -247,4 +287,59 @@ li a {
 .unkempt {
 	font-family: 'Unkempt', cursive;
 	font-size: 20px;
+}
+
+div.slide-left {
+  width:100%;
+  overflow:hidden;
+}
+div.slide-left p {
+  animation: slide-left 5s;
+  margin-left: 0%;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 100%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+hr.star-light,
+hr.star-primary {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 30px;
+}
+
+hr.star-light:after,
+hr.star-primary:after {
+  content: "\f005";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 2em;
+  padding: 0 0.25em;
+}
+hr.star-light {
+  border-color: #2C3E50;
+}
+hr.star-light:after {
+  background-color: #ff8080;
+  color: #2C3E50;
+}
+hr.star-primary {
+  border-color: #2C3E50;
+}
+hr.star-primary:after {
+  background-color: white;
+  color: #2C3E50;
 }
