@@ -290,12 +290,12 @@ hr {
 }
 
 div.slide-left {
-  width:100%;
+  /*width:100%;*/
   overflow:hidden;
 }
 div.slide-left p {
   animation: slide-left 5s;
-  margin-left: 0%;
+  /*margin-left: 0%;*/
 }
 
 @keyframes slide-left {
@@ -309,6 +309,27 @@ div.slide-left p {
     width: 100%;
   }
 }
+
+div.slide-right {
+  width:100%;
+  overflow:hidden;
+}
+div.slide-right p {
+  animation: 10s slide-right;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 hr.star-light,
 hr.star-primary {
   padding: 0;
