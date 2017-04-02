@@ -68,7 +68,7 @@ hr {
 	overflow: hidden;
 	height: 525px;
 	width: 100%;
-	border-radius: 15px;
+	/*border-radius: 15px;*/
 	/*box-shadow: 10px 10px 5px #888888;*/
 	margin-right: 15px;
 	word-wrap: break-word;
