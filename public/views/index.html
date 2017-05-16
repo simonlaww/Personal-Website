@@ -12,44 +12,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine|Shadows+Into+Light|Lobster|
     Gloria+Hallelujah|Indie+Flower|Dancing+Script|Coming+Soon|Unkempt">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body ng-app="homePage">
-  <div id="navBar">
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div id="title"></div>
+  <div>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom page-scroll">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <!-- <a class="navbar-brand" href="#page-top">To the top</a> -->
-            </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#page-top">Title</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#intro">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#experience">Experience</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#education">Education</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#hobbies">Hobbies</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
+                    <li><a href="#title">Title</a></li>
+                    <li><a href="#intro">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -142,11 +121,7 @@
           </div>
       </div>
       <div class="edu">
-        <!-- <font class="gloriaHallelujah"><center>University of California, San Diego</center></font> -->
         <div class="container">
-<!--             <div class="col-xs-3">
-              <img src="http://emeriti.ucsd.edu/_images/UCSDlogo" width="80%">
-            </div> -->
             <div class="col-xs-12">
             <font class="comingSoon">
               <uli><center>University of California, San Diego</center></uli><br>
@@ -223,22 +198,17 @@
       <a href="https://github.com/simonlaww" target="_blank"><i class="fa fa-github-square" style="font-size:48px"></i>
       </center></font></a>
   </div>
-      <!-- <img src="http://www.w3schools.com/w3css/img_car.jpg" alt="Car" style="width:100%"> -->
-    <!-- </div> -->
 
   <!-- Live reload script -->
   <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
   <!-- Plugin JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script type="text/javascript" src="/js/controller.js"></script>
-  <script type="text/javascript" src="../js/jquery.combinedScroll.js"></script>
-  <script type="text/javascript">
-    jQuery(document).ready(function($) {  
-      // Hook up the current state to the nav bar
-      $('.page-navigation').onePageNav();
-    });
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Scrolling Nav JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="../js/scrolling.js"></script>
 </body>
 </html>
