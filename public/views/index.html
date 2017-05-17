@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
 
     <title>Simon Law</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -18,10 +19,19 @@
 <body ng-app="homePage">
   <div id="title"></div>
   <div>
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom page-scroll">
+    <nav id="myNavbar" class="navbar navbar-default navbar-fixed-top navbar-custom page-scroll">
         <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="#title"><span class="glyphicon glyphicon-user"></span> Simon</a>
+            </div>
+            <!-- <a href="#" id="menu-icon"></a> -->
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="myNavbar">
+            <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#title">Title</a></li>
                     <li><a href="#intro">About</a></li>
@@ -55,7 +65,7 @@
           </div>
       </div>
       <font class="comingSoon" color="black"><center>Hello! My name is Simon Law and I am currently a sophomore here at the University of California, San Diego studying Mathematics-Computer Science. I love learning about new technologies and just playing around. It's exciting taking on new challenges, pushing yourself to grow and step out of your comfort zone. Outside of coding, I love to dance and am well versed in different styles. Dancing is something that I love to do outside in my free time and I always push myself to grow as a dancer and as a coder. I also really enjoy watching anime and reading manga in my spare time as well.</center></font>
-      <center></br><img src="https://scontent.xx.fbcdn.net/v/t31.0-8/14352601_1418586928168677_3365378077764017492_o.jpg?oh=db967dee4aed9be0117a7befae5c42d3&oe=5967ED5B" width="75%"></center>
+      <center></br><img src="../img/profilepic.jpg" width="75%"></center>
     </div>
   </div>
 
@@ -72,7 +82,7 @@
           <font class="gloriaHallelujah" style="font-size:28px"><center>Everyone Counts</center></font>
           <font class="gloriaHallelujah" style="font-size:18px"><center>June 2016-Sept 2016</center></font>
           <div class="col-xs-3">
-            <img src="https://pbs.twimg.com/profile_images/681970458506342400/_-19rcqc.png" width="80%">
+            <img src="../img/EveryoneCounts.png" width="80%">
           </div>
           <div class="col-xs-8">
             <p align="justify">
@@ -86,7 +96,7 @@
           <font class="gloriaHallelujah" style="font-size:28px"><center>ThoughtStem</center></font>
           <font class="gloriaHallelujah" style="font-size:18px"><center>June 2014-Sept 2014</center></font>
           <div class="col-xs-3">
-            <img src="https://s3-media3.fl.yelpcdn.com/bphoto/Gubuj_fuLcSy-9odUittOg/ls.jpg" width="70%">
+            <img src="../img/ThoughtStem.jpg" width="70%">
           </div>
           <div class="col-xs-8">
             <p align="justify">
@@ -99,7 +109,7 @@
           <font class="gloriaHallelujah" style="font-size:28px"><center>Gateways Summer School</center></font>
           <font class="gloriaHallelujah" style="font-size:18px"><center>June 2014-Aug 2014</center></font>
           <div class="col-xs-3">
-            <img src="http://camp.talentshub.net/wp-content/uploads/sites/8/2016/03/gwlogo-220x162.jpg" width="80%">
+            <img src="../img/Gateways.jpg" width="80%">
           </div>
           <div class="col-xs-8">
             <p align="justify">
@@ -146,7 +156,7 @@
       </div>
       <div class="col-xs-4">
         <center><font class="shadowsIntoLight">KASA Danceoff</font></br>
-          <img src="https://scontent.xx.fbcdn.net/v/t31.0-8/12244270_1063070213713572_887703249198101562_o.jpg?oh=dc0152808a76f50423a1e3068f6f1626&oe=59620AD2" width="100%">
+          <img class="img-container-hobbies" src="../img/kadoff.jpg" width="100%">
           <br><br>
           <div class="thirdCol">
             <p align="justify">
@@ -157,7 +167,7 @@
       </div>
       <div class="col-xs-4">
         <center><font class="shadowsIntoLight">[N]Motion</font></br>
-          <img src="https://scontent.xx.fbcdn.net/v/t1.0-9/17191503_1424892104249352_9099063936513507946_n.jpg?oh=03f2340b9a9c8a9219042dd72f1a1a2a&oe=596270EB" width="100%" height="235px">
+          <img class="img-container-hobbies" src="../img/nmotion.jpg" width="100%">
           <br><br>
           <div class="thirdCol">
             <p align="justify">
@@ -168,7 +178,7 @@
       </div>
       <div class="col-xs-4">
         <center><font class="shadowsIntoLight">Bodyrock</font></br>
-          <img src="https://scontent.xx.fbcdn.net/v/t31.0-8/11062127_10204258429460269_7011430537988852199_o.jpg?oh=02a9f2b719722d89a5c05b82b364d0c4&oe=595334A9" width="100%">
+          <img class="img-container-hobbies" src="../img/bodyrock.jpg" width="100%">
           <br><br>
           <div class="thirdCol">
             <p align="justify">

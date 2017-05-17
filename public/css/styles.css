@@ -1,3 +1,6 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+
 html, body {
 	margin: 0;
 	max-width: 100%;
@@ -8,19 +11,6 @@ hr {
 	width: 50%;
 	margin: 0;
 	padding: 0;
-}
-
-.header {
-	background-image: url("https://4.bp.blogspot.com/-KXSsLVKT7pY/UoszPzBUhkI/AAAAAAAAV6w/LnSQh4nr9F4/s0/Sunset-at-Rio-de-Janeiro_ultra_HD.jpg");
-	background-size: cover;
-	background-attachment: fixed;
-	width: 100%;
-	height: 760px;
-	z-index: -1;
-	position: relative;
-	background-repeat: no-repeat;
-
-	@media (max-width: @iphone-screen) { background-attachment: scroll; }
 }
 
 .fullCol {
@@ -92,6 +82,20 @@ hr {
 	position: relative;
 }
 
+#menu-icon {
+	display: hidden;
+	margin-top: 5px;
+	float: right;
+	width: 40px;
+	height: 40px;
+	background: #444 url(../img/menu-icon.png) center;
+}
+
+a:hover#menu-icon {
+	background-color: #18DD9C;
+	border-radius: 4px 4px 0 0;
+}
+
 .navbar-custom {
   background: #2C3E50;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -126,55 +130,28 @@ hr {
   color: white;
   background: #18DD9C;
 }
-.navbar-custom .navbar-nav li.active a:hover,
-.navbar-custom .navbar-nav li.active a:focus,
-.navbar-custom .navbar-nav li.active a:active {
+/*.navbar-custom .navbar-nav li.active a:hover,
+.navbar-custom .navbar-nav li.active a:focus,*/
+/*.navbar-custom .navbar-nav li.active a:active {
   color: white;
   background: #18DD9C;
-}
-.navbar-custom .navbar-toggle {
+}*/
+/*.navbar-custom .navbar-toggle {
   color: white;
   text-transform: uppercase;
   font-size: 10px;
   border-color: white;
-}
-.navbar-custom .navbar-toggle:hover,
+}*/
+/*.navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
   background-color: #18DD9C;
   color: white;
   border-color: #18DD9C;
-}
+}*/
 
-@media(min-width:767px) {
-    /*.navbar {
-        padding: 5px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
-
-    .top-nav-collapse {
-        padding: 0;
-    }*/
-    .navbar-custom {
-    padding: 5px 0;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s;
-  }
-  .navbar-custom .navbar-brand {
-    font-size: 2em;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .navbar-custom.affix {
-    padding: 10px 0;
-  }
-  .navbar-custom.affix .navbar-brand {
-    font-size: 1.5em;
-  }
+/*@media only screen and (max-width:480px) {
 }
+*/
 
 .title {
 	background-image: url("http://i.imgur.com/xtcghTT.jpg");
@@ -267,9 +244,11 @@ hr {
   	height: 200px;
 }
 
-.lobster {
-	font-family: 'Lobster', cursive;
-	font-size: 64px;
+.img-container-hobbies {
+	width: 100%;
+	height: 240px;
+	display: inline-block;
+	overflow: hidden;
 }
 
 .shadowsIntoLight {
@@ -277,31 +256,11 @@ hr {
 	font-size: 24px;
 }
 
-.gloriaHallelujah {
-	font-family: 'Gloria Hallelujah', cursive;
-	font-size: 42px;
-}
-
-.indieFlower {
-	font-family: 'Indie Flower', cursive;
-	font-size: 18px;
-	text-align: left;
-}
-
 .comingSoon {
 	font-family: 'Coming Soon', cursive;
 	font-size: 20px;
 }
 
-.dancingScript {
-	font-family: 'Dancing Script', cursive;
-	font-size: 40px;
-}
-
-.unkempt {
-	font-family: 'Unkempt', cursive;
-	font-size: 20px;
-}
 
 div.slide-left {
   /*width:100%;*/
