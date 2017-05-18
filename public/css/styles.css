@@ -42,22 +42,12 @@ hr {
 }
 
 .navbar-custom {
-  background: #2C3E50;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   border: none;
 }
 
-.navbar-custom .navbar-brand {
-  color: white;
-}
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus,
-.navbar-custom .navbar-brand:active,
-.navbar-custom .navbar-brand.active {
-  color: white;
-}
 .navbar-custom .navbar-nav {
   letter-spacing: 1px;
 }
@@ -65,7 +55,7 @@ hr {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #18DD9C;
+  color: white;
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
@@ -83,12 +73,6 @@ hr {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
-
-	background-image: url("../img/Title.jpg") no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 
 	line-height: 760px;
     text-align: center;
