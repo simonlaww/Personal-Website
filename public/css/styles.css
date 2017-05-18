@@ -178,7 +178,7 @@ hr {
 	position: fixed;
 	padding-bottom: 150px;
 	z-index: -1;
-	position: absolute;
+	position: relative;
 	padding-top: 100px;
 }
 
