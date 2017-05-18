@@ -79,7 +79,7 @@ hr {
 
 .title {
     background-image: url("../img/Title.jpg");
-	background-size: 100% auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
