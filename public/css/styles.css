@@ -22,7 +22,6 @@ hr {
 	border-radius: 15px;
 	/*box-shadow: 10px 10px 5px #888888;*/
 	word-wrap: break-word;
-	z-index: -1;
 	position: relative;
 }
 
@@ -36,7 +35,6 @@ hr {
 	/*box-shadow: 10px 10px 5px #888888;*/
 	/*margin-right: 15px;*/
 	word-wrap: break-word;
-	z-index: -1;
 	position: relative;
 	padding-bottom: 50px;
 }
@@ -76,7 +74,7 @@ hr {
 
 	line-height: 760px;
     text-align: center;
-    z-index: -1;
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -89,80 +87,42 @@ hr {
 .intro {
 	/*background-image: url("http://wallpapercave.com/wp/bGtUe1Y.jpg");*/
 	background-color: #ff8080;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
 	width: 100%;
 	height: 100%;
-	position: fixed;
 	padding-bottom: 150px;
-	z-index: -1;
 	position: relative;
 	padding-top: 100px;
 }
 
 .experience {
-	/*background-image: url("http://wallpapercave.com/wp/6k4zvSp.jpg");*/
-	/*background-color: #dd99ff;*/
 	background-color: white;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
 	width: 100%;
-	/*height: 1400px;*/
 	height: 100%;
-	position: fixed;
 	padding-bottom: 150px;
-	z-index: -1;
-	position: relative;
 	padding-top: 100px;
 }
 
 .education {
-	/*background-image: url("http://wallpapercave.com/wp/BQ6IevO.jpg");*/
-	/*background-color: #00ff00;*/
 	background-color: #ff8080;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
 	width: 100%;
 	height: 100%;
-	position: fixed;
 	padding-bottom: 150px;
-	z-index: -1;
-	position: relative;
 	padding-top: 100px;
 }
 
 .hobbies {
-	/*background-image: url("http://wallpapercave.com/wp/CLTI5X7.jpg");*/
-	/*background-color: #4dffff;*/
 	background-color: white;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
 	width: 100%;
 	height: 100%;
-	position: fixed;
 	padding-bottom: 150px;
-	z-index: -1;
-	position: relative;
 	padding-top: 100px;
 }
 
 .contact {
-	/*background-image: url("http://wallpapercave.com/wp/NjGx9YN.jpg");*/
-	/*background-color: #ffff80;*/
 	background-color: #ff8080;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
 	width: 100%;
 	height: 100%;
-	position: fixed;
 	padding-bottom: 150px;
-	z-index: -1;
-	position: relative;
 	padding-top: 100px;
 }
 
