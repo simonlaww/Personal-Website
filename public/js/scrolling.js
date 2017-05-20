@@ -3,7 +3,7 @@ $(document).ready(function(){
   $('body').scrollspy({target: ".navbar", offset: 50});   
 
   // Add smooth scrolling on all links inside the navbar
-  $("#myNavbar a").on('click', function(event) {
+  $("#header a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -24,3 +24,25 @@ $(document).ready(function(){
     }  // End if
   });
 });
+
+/**
+ * Listen to scroll to change header opacity class
+ */
+function checkScroll(){
+    var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+    var width = screen.width;
+
+    if($(window).scrollTop() > startY){
+        $('.navbar').addClass("scrolled");
+        $('.navbar').removeClass("colorChange");
+    }else{
+        $('.navbar').removeClass("scrolled");
+        $('.navbar').addClass("colorChange");
+    }
+}
+
+if($('.navbar').length > 0){
+    $(window).on("scroll load resize", function(){
+        checkScroll();
+    });
+}

@@ -43,10 +43,12 @@ hr {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 500;
+  font-size: 18px;
   border: none;
+  letter-spacing: 1px;
 }
 
-.navbar-custom .navbar-nav {
+/*.navbar-custom .navbar-nav {
   letter-spacing: 1px;
 }
 .navbar-custom .navbar-nav li a {
@@ -58,29 +60,96 @@ hr {
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
   color: white;
-}
-.navbar-custom .navbar-nav li.active a {
+}*/
+/*.navbar-custom .navbar-nav li.active a {
   color: white;
   background: #18DD9C;
+}*/
+
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
 }
 
+.navbar.scrolled {
+    background: rgb(245, 245, 245); //IE
+    background: rgba(0, 0, 0, 0.78); //NON-IE
+}
+
+.navbar.colorChange {
+	color: white;
+}
 
 .title {
-    background-image: url("../img/Title.jpg");
+	background-image: url("../img/dimmedTitle.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
+    text-align: center;  
+}
 
-	line-height: 760px;
+.title h2 {
+    font-size: 5em;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #FFF;
     text-align: center;
-  
+	font-family: 'Dancing Script', cursive;
+}
+.banner-text h3 {
+    color: #fff;
+    font-size: 2em;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 1em 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.banner-text p {
+    font-size: 1.1em;
+    color: #fff;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.banner-text.text-center {
+    padding: 14em 0 6em;
+}
+.arrow{
+	padding-top: 100px;
+    text-align: center;
+}
+
+.arrow a i.fa.fa-angle-down{
+    color: #FFFFFF;
+    font-size: 2em;
+    border: solid 1px #FFFFFF;
+    width: 50px;
+    height: 50px;
+    padding: .25em 0 0 0;
+    border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	-moz-border-radius: 50%;
 }
 
 @media screen and (max-width: 768px) {
 	.title {
-		background-image: url("../img/Title.jpg");
+		background-image: url("../img/dimmedTitle.jpeg");
 		background-attachment: scroll;
+	}
+	.navbar-custom {
+    	background: rgb(245, 245, 245); //IE
+    	background: rgba(0, 0, 0, 0.78); //NON-IE
+	}
+	.navbar.colorChange {
+		color: black;
+	}
+	.navbar-toggle .icon-bar {
+    	background-color: black;
 	}
 }
 
