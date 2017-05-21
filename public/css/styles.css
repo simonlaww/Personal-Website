@@ -26,14 +26,10 @@ hr {
 }
 
 .thirdCol {
-	/*background: silver;*/
 	display: inline-block;
 	overflow: hidden;
 	height: 100%;
 	width: 100%;
-	/*border-radius: 15px;*/
-	/*box-shadow: 10px 10px 5px #888888;*/
-	/*margin-right: 15px;*/
 	word-wrap: break-word;
 	position: relative;
 	padding-bottom: 50px;
@@ -153,6 +149,66 @@ hr {
 	}
 }
 
+.portfolio-pic     { 
+	position:relative; 
+	padding:10px;
+	overflow:hidden;
+}
+
+.portfolio-pic col-md-12 {
+	padding-top: 15px;
+}
+
+.portfolio-pic img {
+	width: 100%;
+	height: 240px;
+	display: inline-block;
+	overflow: hidden;
+
+	padding:5px;
+	border-radius:2px;
+	box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/*.portfolio-pic img:hover {
+	-webkit-transition: all 750ms ease;
+	-moz-transition: all 750ms ease;
+	-ms-transition: all 750ms ease;
+	-o-transition: all 750ms ease;
+	transition: all 750ms ease;
+	filter: brightness(50%);
+}*/
+
+span.overlay {
+	opacity: 1;
+	-o-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-webkit-transition: -webkit-transform 1s;
+	background: url(../img/glass2.jpg) center center no-repeat #000;
+	cursor: pointer;
+	height: 240px;
+	width: 100%;
+	position: absolute;
+	z-index: 10;
+	opacity: 0;
+}
+
+span.overlay:hover {
+	opacity: .7;
+	-webkit-transition: all 1500ms ease;
+	-moz-transition: all 1500ms ease;
+	-ms-transition: all 1500ms ease;
+	-o-transition: all 1500ms ease;
+	transition: all 1500ms ease;
+/*	-o-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-webkit-transition: -webkit-transform 1s;*/
+	-webkit-box-shadow: 0px 0px 4px #000;
+	-moz-box-shadow: 0px 0px 4px #000;
+	box-shadow: 0px 0px 4px #000;
+}
+
+
 .intro {
 	/*background-image: url("http://wallpapercave.com/wp/bGtUe1Y.jpg");*/
 	background-color: #ff8080;
@@ -164,6 +220,14 @@ hr {
 }
 
 .experience {
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 150px;
+	padding-top: 100px;
+}
+
+.portfolio {
 	background-color: white;
 	width: 100%;
 	height: 100%;
@@ -200,6 +264,10 @@ hr {
 	height: 240px;
 	display: inline-block;
 	overflow: hidden;
+
+	padding:5px;
+	border-radius:2px;
+	box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .shadowsIntoLight {

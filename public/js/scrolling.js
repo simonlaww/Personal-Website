@@ -32,17 +32,19 @@ function checkScroll(){
     var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
     var width = screen.width;
 
-    if($(window).scrollTop() > startY){
+    if ($(window).scrollTop() > startY){
         $('.navbar').addClass("scrolled");
         $('.navbar').removeClass("colorChange");
-    }else{
+    } else{
         $('.navbar').removeClass("scrolled");
         $('.navbar').addClass("colorChange");
     }
 }
 
-if($('.navbar').length > 0){
-    $(window).on("scroll load resize", function(){
+    if($('.navbar').length > 0){
+      $(window).on("scroll load resize", function(){
         checkScroll();
     });
 }
+
+
