@@ -81,12 +81,13 @@ hr {
 }
 
 .title {
-	background-image: url("../img/dimmedTitle.jpeg");
+	background-image: url("../img/DimTitle2.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
     text-align: center;  
+    /*height: 100%;*/
 }
 
 .title h2 {
